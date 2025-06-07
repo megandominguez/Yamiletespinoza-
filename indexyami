@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Secreto del Río</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+    }
+
+    /* --- Sidebar --- */
+    .sidebar {
+      width: 220px;
+      background: linear-gradient(to bottom, red, orange, yellow, green, blue, violet);
+      padding-top: 30px;
+      position: fixed;
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: black;
+      font-weight: bold;
+    }
+
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* --- Main content --- */
+    .main {
+      margin-left: 240px;
+      padding: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #ff69b4;
+      margin-top: 40px;
+      border-left: 5px solid #ff69b4;
+      padding-left: 10px;
+    }
+
+    p, li {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #111;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #888;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+      color: black;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      display: block;
+      border: 3px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #00ffff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .main {
+        margin: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Menú</h2>
+    <a href="#genero">Género y Diversidad</a>
+    <a href="#lgbt">¿Qué es LGBT+?</a>
+    <a href="#identidades">Identidades</a>
+    <a href="#historia">Historia</a>
+    <a href="#historias-reales">Historias Reales</a>
+    <a href="#tabla">Tabla de Géneros</a>
+    <a href="#imagenes">Imágenes</a>
+    <a href="#videos">Videos y Campañas</a>
+  </div>
+
+  <div class="main">
+    <h1>El Secreto del Río</h1>
+
+    <h2 id="genero">¿Qué es el género y la diversidad?</h2>
+    <p>El género es una construcción social que define roles y expresiones asociadas a lo masculino o femenino. La diversidad de género reconoce que existen muchas formas válidas de vivir la identidad personal más allá del binarismo tradicional.</p>
+
+    <h2 id="lgbt">¿Qué es LGBT+?</h2>
+    <p>LGBT+ representa una comunidad diversa que incluye Lesbianas, Gays, Bisexuales, Trans, y muchas otras identidades como Queer, Asexuales, Intersexuales, etc. El símbolo "+" es un reconocimiento de todas las identidades y orientaciones no normativas.</p>
+
+    <h2 id="identidades">Identidades de Género</h2>
+    <ul>
+      <li><strong>Trans:</strong> Identidad que no concuerda con el sexo asignado al nacer.</li>
+      <li><strong>No binarie:</strong> Persona que no se identifica como hombre ni mujer exclusivamente.</li>
+      <li><strong>Transexual:</strong> Persona que puede transitar social, legal y/o médicamente a otro género.</li>
+      <li><strong>Cisgénero:</strong> Persona cuya identidad de género coincide con su sexo de nacimiento.</li>
+    </ul>
+
+    <h2 id="historia">Historia del Movimiento LGBT+</h2>
+    <p>El movimiento LGBT+ tiene raíces en siglos de resistencia. En 1969, la revuelta de Stonewall en Nueva York marcó el inicio del activismo moderno. Personas trans y gays, en especial mujeres trans negras como Marsha P. Johnson, lideraron protestas contra la represión policial.</p>
+    <p>En las décadas siguientes, la comunidad enfrentó la epidemia del VIH/SIDA, luchando por derechos médicos y visibilidad. En muchos países se ha avanzado con leyes de matrimonio igualitario, identidad de género, y adopción.</p>
+    <p>Hoy, el movimiento continúa luchando por equidad, reconocimiento, y el derecho a existir sin miedo.</p>
+
+    <h2 id="historias-reales">Historias Reales</h2>
+    <p>“Salir del clóset fue duro, pero descubrí una red de apoyo maravillosa. Hoy me abrazo como soy.” – Alex, 21 años.</p>
+    <p>“Soy madre de un hijo trans. Su valentía me inspira cada día. Aprendí a ser una mejor persona.” – Laura.</p>
+
+    <h2 id="tabla">Tabla de Identidades y Reconocimiento</h2>
+    <table>
+      <tr>
+        <th>Identidad</th>
+        <th>Año de Visibilidad o Reconocimiento</th>
+      </tr>
+      <tr>
+        <td>Gay</td>
+        <td>1969 (Stonewall)</td>
+      </tr>
+      <tr>
+        <td>Lesbiana</td>
+        <td>1970s (movimiento feminista)</td>
+      </tr>
+      <tr>
+        <td>Bisexual</td>
+        <td>1999 (día oficial de la bisexualidad)</td>
+      </tr>
+      <tr>
+        <td>Transexual</td>
+        <td>1990s (reconocimiento médico y legal)</td>
+      </tr>
+      <tr>
+        <td>No binarie</td>
+        <td>2010s (visibilidad creciente)</td>
+      </tr>
+      <tr>
+        <td>Heterosexual</td>
+        <td>No aplica</td>
+      </tr>
+    </table>
+
+    <h2 id="imagenes">Imágenes Representativas</h2>
+    <img src="https://static.vecteezy.com/system/resources/previews/021/449/384/original/world-map-supporting-lgbt-community-illustration-icon-world-silhouette-map-vector.jpg" alt="Mapa LGBT mundial">
+    <img src="https://www.milenio.com/uploads/media/2019/06/20/el-origen-y-significado-de_0_51_1200_746.jpg" alt="Bandera LGBT">
+
+    <h2 id="videos">Videos y Campañas</h2>
+    <p>🎥 <a href="https://youtu.be/V3S5fSchFlY?si=i--OpPaNvVCJNUk2" target="_blank">Video: Historia del Movimiento LGBT+</a></p>
+    <p>🎗️ <a href="https://hchr.org.mx/camp/libres-e-iguales/" target="_blank">Campaña por los Derechos LGBT+ en México</a></p>
+  </div>
+
+</body>
+</html>
